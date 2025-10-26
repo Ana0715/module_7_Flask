@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body class="light-theme">
+    <h1 class="funny-title">😄 Enter Your Details! 🦄</h1>
+    <form action="/submit" method="POST" class="funny-form">
+        <label for="name">Your Super Cool Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Your Awesome Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="color">Your Favourite Color:</label>
+        <input type="color" name="color" id="color"><br>
+
+        <label for="profession">Your Profession:</label>
+        <select name="profession" id="profession">
+            <option value="developer">Developer</option>
+            <option value="designer">Designer</option>
+            <option value="manager">Manager</option>
+        </select><br>
+
+        <p>Your Hobbies:</p>
+        <div class="radio-label">
+            <label><input type="checkbox" name="hobbies" value="books">Books</label>
+            <label><input type="checkbox" name="hobbies" value="sports">Sports</label>
+            <label><input type="checkbox" name="hobbies" value="games">Games</label>
+        </div><br>
+
+        <p>Your Level:</p>
+        <div class="level-back">
+            <label><input type="radio" name="level" value="beginner">Beginner</label>
+            <label><input type="radio" name="level" value="advanced">Advanced</label>
+        </div><br>
+
+        <button type="submit" class="funny-button">🚀 Let's Go!</button>
+    </form>
+    <button id="themeChange" class="funny-button">Push me!</button>
+
+    <script src="{{ url_for('static', filename='js/form.js') }}"></script>
+</body>
+</html>
+

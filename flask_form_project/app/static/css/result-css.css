@@ -1,0 +1,116 @@
+body {
+    font-family: 'Arial', Helvetica, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+    background-color: #000000;
+    color: #ffffff;
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+}
+
+.end-form {
+    margin: 50px auto;
+    padding: 30px;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #2bff00;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #2bff00,
+        0 0 15px #2bff00,
+        0 0 30px #2bff00,
+        0 0 60px #00ff4b;
+    animation: neon-border 2s infinite alternate;
+    backdrop-filter: blur(5px);
+}
+
+@keyframes neon-border {
+    from {
+        border-color: #2bff00;
+        box-shadow:
+            0 0 5px #2bff00,
+            0 0 15px #2bff00,
+            0 0 30px #2bff00,
+            0 0 60px #00ff4b;
+    }
+    to {
+        border-color: #00ff4b;
+        box-shadow:
+            0 0 10px #00ff4b,
+            0 0 20px #00ff4b,
+            0 0 40px #00ff4b,
+            0 0 80px #00ff8c;
+    }
+}
+
+h1 {
+    color: #2bff00;
+    font-size: 2.5rem;
+    text-shadow:
+        0 0 5px rgba(43, 255, 0, 0.8),
+        0 0 10px rgba(43, 255, 0, 0.6),
+        0 0 20px rgba(43, 255, 0, 0.4),
+        0 0 30px rgba(43, 255, 0, 0.2);
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+p {
+    color: #aaff00;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-shadow:
+        0 0 3px rgba(170, 255, 0, 0.7),
+        0 0 6px rgba(170, 255, 0, 0.5),
+        0 0 9px rgba(170, 255, 0, 0.3);
+    margin-bottom: 15px;
+}
+
+strong {
+    color: #2bff00;
+    text-shadow:
+        0 0 4px rgba(43, 255, 0, 0.9),
+        0 0 8px rgba(43, 255, 0, 0.7),
+        0 0 12px rgba(43, 255, 0, 0.5);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: rgba(43, 255, 0, 0.2);
+    color: #2bff00;
+    text-decoration: none;
+    border-radius: 30px;
+    border: 1px solid #2bff00;
+    box-shadow:
+        0 0 5px #2bff00,
+        0 0 15px #2bff00,
+        0 0 30px #2bff00;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background: rgba(43, 255, 0, 0.4);
+    transform: scale(1.05);
+    box-shadow:
+        0 0 10px #2bff00,
+        0 0 25px #2bff00,
+        0 0 50px #00ff4b;
+}
+
+@keyframes neon-glow {
+    0% {
+        text-shadow:
+            0 0 5px rgba(43, 255, 0, 0.8),
+            0 0 10px rgba(43, 255, 0, 0.6),
+            0 0 20px rgba(43, 255, 0, 0.4);
+    }
+    100% {
+        text-shadow:
+            0 0 10px rgba(43, 255, 0, 1),
+            0 0 20px rgba(43, 255, 0, 0.8),
+            0 0 40px rgba(43, 255, 0, 0.6);
+    }
+}
+
+
