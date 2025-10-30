@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="contact-form-wrapper">
+    <h1><strong>Contact Us</strong></h1>
+    <h3 class="ok-message"></h3>
+    <form>
+        <div class="form">
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea name="message" id="message" rows="8" cols="50" required></textarea>
+
+            <button type="submit">Send</button>
+
+            <div class="loading" style="display: none;">
+                <p>Sending...</p>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<script src="{{ url_for('static', filename='js/contact.js') }}"></script>
+{% endblock %}
