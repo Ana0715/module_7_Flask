@@ -5,5 +5,7 @@
 {% block content %}
 <h1><strong>Welcome to My Flask App</strong></h1>
 <p>Explore the website to learn more about us!</p>
-<img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo">
+<img src="{{ url_for('static', filename='img/logo.png') }}" alt="Logo"><br>
+<p>Current Time: {{ current_time.strftime('%A, %B %d, %Y %H:%M:%S') }}</p>
+
 {% endblock %}
